@@ -1,9 +1,11 @@
+import SeeAll from "~/components/homepage/SeeAll";
+
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <p>Hello from AprtmentLife</p>
-      </div>
+    <main className="min-h-screen">
+      <SeeAll title={'Upcoming Events'} see_all_link={'#'}/>
+      <SeeAll title={'AprtmentLife Entertainers'} see_all_link={'#'}/>
+      <SeeAll title={'Past Events'} see_all_link={'#'}/>
     </main>
   );
 }
