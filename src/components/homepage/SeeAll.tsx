@@ -14,7 +14,7 @@ function SeeAll(props:TSeeAll) {
     <section className={'w-full mb-4'}>
         <div className={'w-full flex justify-between items-center'}>
             <h2 className={'font-semibold my-3 text-2xl'}>{title}</h2>
-            <Link href={see_all_link}>See all</Link>
+            <Link href={see_all_link} className='cursor pointer'>See all...</Link>
         </div>
         <div className={'w-[85%] flex justify-between'}>
             {events?.slice(5,8)?.map(event => (
