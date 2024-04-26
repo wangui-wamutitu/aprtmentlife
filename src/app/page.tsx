@@ -1,5 +1,8 @@
 import SeeAll from "~/components/homepage/SeeAll";
 
+//ensures when data is changed on the db, it updates on next render on the app. Prevents caching
+export const dynamic = 'force-dynamic'
+
 export default function HomePage() {
   return (
     <main className="min-h-screen">
